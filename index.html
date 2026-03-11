@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bohdan Nychyporuk Art</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Bohdan Nychyporuk</h1>
+
+<p class="subtitle" data-ua="Художник • Україна" data-en="Artist • Ukraine">
+Художник • Україна
+</p>
+
+<div class="lang">
+
+<button onclick="setLang('ua')">UA</button>
+<button onclick="setLang('en')">EN</button>
+
+</div>
+
+</header>
+
+
+<section class="about">
+
+<p data-ua="Я художник з України. Малюю олійними фарбами, графітом та олівцем. Мої роботи присвячені природі, тваринам, великим котам, пейзажам та портретам тварин."
+
+data-en="I am an artist from Ukraine. I create artworks with oil paints, graphite and pencil. My works are dedicated to nature, animals, big cats, landscapes and animal portraits.">
+
+Я художник з України. Малюю олійними фарбами, графітом та олівцем.
+Мої роботи присвячені природі, тваринам, великим котам, пейзажам та портретам тварин.
+
+</p>
+
+</section>
+
+
+<section class="portfolio">
+
+<h2 data-ua="Великі коти" data-en="Big Cats">Великі коти</h2>
+
+<div class="gallery">
+
+<img loading="lazy" src="images/bigcats/lion.jpg">
+<img loading="lazy" src="images/bigcats/tiger.jpg">
+
+</div>
+
+</section>
+
+
+<section class="portfolio">
+
+<h2 data-ua="Інші роботи" data-en="Other Art">Інші роботи</h2>
+
+<div class="gallery">
+
+<img loading="lazy" src="images/other/landscape.jpg">
+<img loading="lazy" src="images/other/pet.jpg">
+
+</div>
+
+</section>
+
+
+<section class="contact">
+
+<h2 data-ua="Замовити малюнок" data-en="Commission Artwork">
+Замовити малюнок
+</h2>
+
+<a class="btn"
+href="mailto:nychyporukbohdan@gmail.com?subject=Замовлення%20картини">
+
+<span data-ua="Замовити роботу" data-en="Order Artwork">
+Замовити роботу
+</span>
+
+</a>
+
+<a class="btn"
+href="mailto:nychyporukbohdan@gmail.com">
+
+<span data-ua="Написати мені" data-en="Contact Me">
+Написати мені
+</span>
+
+</a>
+
+</section>
+
+
+<section class="social">
+
+<h2 data-ua="Соціальні мережі" data-en="Social Media">
+Соціальні мережі
+</h2>
+
+<a class="social-btn"
+href="https://www.instagram.com/nych_bo"
+target="_blank">
+
+Instagram
+
+</a>
+
+<a class="social-btn"
+href="https://www.tiktok.com/@nych_bo"
+target="_blank">
+
+TikTok
+
+</a>
+
+<a class="social-btn"
+href="https://www.facebook.com/share/14Xf8BPHP9z/"
+target="_blank">
+
+Facebook
+
+</a>
+
+</section>
+
+
+<footer>
+
+<p>© Bohdan Nychyporuk Art</p>
+
+</footer>
+
+
+<script>
+
+function setLang(lang){
+
+document.querySelectorAll("[data-ua]").forEach(el=>{
+el.innerText = el.dataset[lang]
+})
+
+}
+
+</script>
+
+</body>
+</html>
